@@ -1,0 +1,280 @@
+:root {
+            --color-bg: #FFFCF7;
+            --color-text: #1a1a1a;
+            --color-text-muted: #5c5c5c;
+            --color-accent: #2D5A4A;
+            --color-accent-light: #E8F0ED;
+            --color-border: #e5e0d8;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            padding: 80px 0 60px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .name {
+            white-space: nowrap;
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 0px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--color-text-muted);
+            max-width: 540px;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-accent);
+            margin-bottom: 24px;
+        }
+
+        /* What I Do */
+        .what-i-do p {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .service-tag {
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Background */
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            margin-bottom: 24px;
+        }
+
+        .credential {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .credential-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--color-accent);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .background-text {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Proof Points */
+        .proof-point {
+            margin-bottom: 32px;
+            padding-left: 20px;
+            border-left: 3px solid var(--color-accent);
+        }
+
+        .proof-point:last-child {
+            margin-bottom: 0;
+        }
+
+        .proof-title {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .proof-description {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        .proof-outcome {
+            margin-top: 8px;
+            font-weight: 500;
+            color: var(--color-accent);
+            font-size: 0.95rem;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            margin-bottom: 36px;
+            padding: 28px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .testimonial:last-child {
+            margin-bottom: 0;
+        }
+
+        .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .testimonial-author {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-role {
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Contact */
+        .contact-section {
+            text-align: center;
+            padding: 64px 0 80px;
+        }
+
+        .contact-section .section-title {
+            margin-bottom: 16px;
+        }
+
+        .contact-text {
+            color: var(--color-text-muted);
+            margin-bottom: 24px;
+        }
+
+        .contact-email {
+            display: inline-block;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--color-accent);
+            text-decoration: none;
+            padding: 12px 32px;
+            border: 2px solid var(--color-accent);
+            border-radius: 100px;
+            transition: all 0.2s ease;
+        }
+
+        .contact-email:hover {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            html {
+                font-size: 16px;
+            }
+
+            header {
+                padding: 60px 0 48px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .headshot {
+                margin-bottom: 0px;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 36px 0;
+            }
+
+            .credentials {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .testimonial {
+                padding: 20px;
+            }
+        }
